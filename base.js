@@ -79,3 +79,16 @@ async function fetchFood() {
 }
 
 fetchFood();
+
+//validation
+function validateEmail(event) {
+    const emailInput = document.getElementById("emailInput");
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailPattern.test(emailInput.value)) {
+        alert("Please enter a valid email address.");
+        event.preventDefault(); // Stop form submission
+        return false;
+    }
+    return true;
+}

@@ -723,6 +723,7 @@ body.no-scroll {
     border-radius: 5px;
     outline: none;
     font-size: 14px;
+    color: #000;
 }
 
 .newsletter-form button {

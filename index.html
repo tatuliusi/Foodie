@@ -200,8 +200,8 @@
                 <p class="footer-description">
                     Subscribe to our newsletter for the latest recipes and updates.
                 </p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Your email address" required>
+                <form class="newsletter-form" onsubmit="return validateEmail(event)">
+                    <input type="email" id="emailInput" placeholder="Your email address" required>
                     <button type="submit">Subscribe</button>
                 </form>
             </div>
